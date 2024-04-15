@@ -1,0 +1,204 @@
+/* Set body styles */
+body {
+    background-color: rgba(83, 144, 191, 0.564);
+    /* Background color with alpha transparency */
+    font-family: Arial, sans-serif;
+    /* Specify font family with fallback */
+    margin: 0;
+    /* Remove default margin */
+    padding: 0;
+    /* Remove default padding */
+}
+
+/* Set styles for the container */
+.set {
+    display: flex;
+    /* Use flexbox for layout */
+    justify-content: space-evenly;
+    /* Evenly distribute space between items */
+    margin: 2rem;
+    /* Add margin */
+    gap: 0.5rem;
+    /* Add gap between items */
+}
+
+/* Set styles for each column */
+.column {
+    border: 2px solid black;
+    /* Add solid black border */
+    border-radius: 10px;
+    /* Add border radius for rounded corners */
+    background-color: white;
+    /* Set background color to white */
+    height: 80vh;
+    /* Set height */
+    width: 20vw;
+    /* Set width */
+    display: flex;
+    /* Use flexbox for layout */
+    flex-direction: column;
+    /* Arrange items in column */
+    box-shadow: 0px 2px 14px 5px rgb(48 48 67);
+    /* Add box shadow */
+}
+
+/* Set styles for the color name */
+.color-name {
+    padding: 0.5rem;
+    /* Add padding */
+    margin-top: 0.5rem;
+    /* Add margin */
+    font-size: large;
+    /* Set font size */
+    background-color: rgba(251, 255, 252, 0.299);
+    /* Background color with alpha transparency */
+    border: 1px solid rgba(23, 21, 21, 0.822);
+    /* Add border */
+    text-align: center;
+    /* Center text */
+    border-radius: 5px;
+    /* Add border radius for rounded corners */
+    box-shadow: inset -10px -1px 15px 7px rgb(77 77 85 / 45%);
+    /* Add inset box shadow */
+}
+
+/* Set styles for the controller */
+.controller {
+    display: flex;
+    /* Use flexbox for layout */
+    justify-content: center;
+    /* Center content horizontally */
+    margin-top: auto;
+    /* Align to bottom */
+}
+
+/* Set styles for the buttons */
+.controller button {
+    margin: 0.5rem;
+    /* Add margin */
+    padding: 0.51rem;
+    /* Add padding */
+    font-size: large;
+    /* Set font size */
+    cursor: pointer;
+    /* Set cursor to pointer */
+    border: 1px solid black;
+    /* Add solid black border */
+    border-radius: 1.5rem;
+    /* Add border radius for rounded corners */
+    background-color: rgb(72 155 159 / 36%);
+    /* Background color with alpha transparency */
+    color: rgb(0, 10, 15);
+    /* Set text color */
+
+}
+
+/* Set styles for the instruction */
+.instruct {
+    width: 100vw;
+    /* Set width to full viewport width */
+    text-align: center;
+    /* Center text */
+    background-color: black;
+    /* Set background color */
+    color: yellowgreen;
+    /* Set text color */
+    height: 3rem;
+    /* Set height */
+    line-height: 3rem;
+    /* Center text vertically */
+    font-weight: bold;
+    /* Set font weight */
+    font-style: italic;
+    /* Set font style */
+}
+
+/* Media queries for responsiveness */
+@media only screen and (max-width: 750px) {
+    .five {
+        display: none;
+        /* Hide the fifth column */
+    }
+
+    .column {
+        width: 50vw;
+        /* Adjust column width */
+    }
+
+    .color-name {
+        padding: 0.45rem;
+        /* Adjust padding */
+        margin-top: 0.45rem;
+        /* Adjust margin */
+        font-size: medium;
+        /* Adjust font size */
+    }
+
+    .instruct {
+        width: 100vw;
+        /* Set width to full viewport width */
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .five,
+    .four,
+    .three {
+        display: none;
+        /* Hide the fifth, fourth, and third columns */
+    }
+
+    .column {
+        width: 50vw;
+        /* Adjust column width */
+    }
+
+    .color-name {
+        padding: 0.45rem;
+        /* Adjust padding */
+        margin-top: 0.45rem;
+        /* Adjust margin */
+        font-size: medium;
+        /* Adjust font size */
+    }
+
+    .instruct {
+        width: 100vw;
+        /* Set width to full viewport width */
+        height: 5rem;
+        /* Set height */
+    }
+}
+
+@media only screen and (max-width: 415px) {
+
+    .five,
+    .four,
+    .three,
+    .two {
+        display: none;
+        /* Hide the fifth, fourth, third, and second columns */
+    }
+
+    .column {
+        width: 50vw;
+        /* Adjust column width */
+    }
+
+    .color-name {
+        padding: 0.45rem;
+        /* Adjust padding */
+        margin-top: 0.45rem;
+        /* Adjust margin */
+        font-size: small;
+        /* Adjust font size */
+    }
+
+    .instruct {
+        width: 100vw;
+        /* Set width to full viewport width */
+        height: 7rem;
+        /* Set height */
+    }
+}
