@@ -134,6 +134,10 @@ body {
         /* Adjust font size */
     }
 
+    .controller button {
+        font-size: medium;
+    }
+
     .instruct {
         width: 100vw;
         /* Set width to full viewport width */
@@ -159,8 +163,12 @@ body {
         /* Adjust padding */
         margin-top: 0.45rem;
         /* Adjust margin */
-        font-size: medium;
+        font-size: small;
         /* Adjust font size */
+    }
+
+    .controller button {
+        font-size: small;
     }
 
     .instruct {
@@ -191,14 +199,25 @@ body {
         /* Adjust padding */
         margin-top: 0.45rem;
         /* Adjust margin */
-        font-size: small;
+        font-size: xx-small;
         /* Adjust font size */
+
+
+    }
+
+
+    .controller button {
+        margin: 0.1rem;
+        padding: 0.1rem;
+        font-size: smaller;
+
     }
 
     .instruct {
         width: 100vw;
         /* Set width to full viewport width */
-        height: 7rem;
+        height: 10rem;
         /* Set height */
+        font-size: small;
     }
 }
