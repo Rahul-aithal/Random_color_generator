@@ -30,7 +30,7 @@ function main() {
                 backgroundColor = getRandomColor();
             }
             //Check if the innerHtml is Start
-           
+           if (controller.children[1].innerHTML === "Start") controller.children[1].innerHTML = "Next"
             
             // Set the background color of the parent element
             controller.parentNode.style.background = backgroundColor;
