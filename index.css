@@ -91,6 +91,7 @@ body {
     color: rgb(0, 10, 15);
     /* Set text color */
 
+    box-shadow: 0px 0px 5px rgb(26 28 30);
 }
 
 /* Set styles for the instruction */
@@ -218,6 +219,6 @@ body {
         /* Set width to full viewport width */
         height: 10rem;
         /* Set height */
-        font-size: small;
+        font-size:small ;
     }
 }

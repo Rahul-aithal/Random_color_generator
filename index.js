@@ -30,8 +30,7 @@ function main() {
                 backgroundColor = getRandomColor();
             }
             //Check if the innerHtml is Start
-            if(controller.children[1].innerHTML === "Start") controller.children[1].innerHTML ="Next"
-            
+           
             
             // Set the background color of the parent element
             controller.parentNode.style.background = backgroundColor;
@@ -48,10 +47,13 @@ function main() {
             } else {
                 // Change button text to indicate successful copy
                 controller.children[0].innerHTML = "Copied!"
+                
                 // Reset button text after a brief delay
                 setTimeout(() => {
                     controller.children[0].innerHTML = "Copy"
+                    
                 }, 1000);
+               
                 // Copy the color value to the clipboard
                 window.navigator.clipboard.writeText(controller.parentNode.children[0].innerHTML);
                 // Log a message indicating that the color value has been copied
