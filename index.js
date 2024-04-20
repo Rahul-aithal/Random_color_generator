@@ -1,6 +1,6 @@
 
-import { getRandomColor } from "./get_random_color.js";
-import BgcolorRem from "./Color_store.js";
+import { getRandomColor } from "./Components/get_random_color.js";
+import BgcolorRem from "./Components/Color_store.js";
 
 
 // Main function to initialize event listeners
